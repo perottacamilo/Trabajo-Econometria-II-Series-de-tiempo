@@ -1,6 +1,7 @@
 library(tidyr)
 library(readxl)
 library(haven)      
+library(AER)
 library(modelsummary) 
 library(tidyverse)   
 library(janitor)
@@ -29,7 +30,7 @@ datos_exportacion <- datos_exportacion %>%
   rename(value_export = value)
 
 datos_produccion <- datos_produccion %>% 
-  rename(value_production = value)
+  rename(total_production = value)
 
 derivados <- derivados %>% 
   select(area, year, item, value) %>% 
@@ -83,17 +84,39 @@ derivados <- derivados %>%
   left_join(tipo_cambio, by = c("year", "area")) 
    
   datos_cocoa_2 <- datos_cocoa %>% 
-  select(area, year, value_export, value_production, derivado1, derivado2, derivado3,
+  select(area, year, value_export, total_production, derivado1, derivado2, derivado3,
          precio_kg_nominal, precio_kg_real, precio_local, tipo_cambio, precio_usd, total_derivados)
    
    datos_cocoa_2 <- datos_cocoa_2 %>% 
-   mutate(total_export = total_derivados + value_export)  
+   mutate(total_export = total_derivados + value_export,
+          precio_internacional_nominal = precio_kg_nominal * 1000,
+          precio_internacional_real = precio_kg_real *1000,
+          ln_production = log(total_production),
+          ln_total_export = log(total_export),
+          ln_precio_prodcutor_usd = log(precio_usd),
+          ln_tipo_cambio = log(tipo_cambio),
+          ln_precio_internacional_nominal = log(precio_internacional_nominal),
+          ln_precio_internacional_real = log(precio_internacional_real)) 
 
+   datos_regresion <- datos_cocoa_2 %>%
+     mutate(area = case_when(
+       area == "Ghana" ~ "gh",
+       area == "Côte d'Ivoire" ~ "cdi",
+       TRUE ~ area
+     )) %>%
+     pivot_wider(
+       id_cols = year,
+       names_from = area,
+       values_from = -c(year, area), 
+       names_glue = "{.value}_{area}") %>% 
+     mutate(smuggling_incentive = precio_usd_gh/precio_usd_cdi)
+                 
 datos_ghana <- datos_cocoa_2 %>% 
   filter("Ghana" == area)
 
 datos_cdi <- datos_cocoa_2 %>% 
   filter("Côte d'Ivoire" == area)
-
+  
 write.csv(datos_ghana, "datos_ghana.csv", row.names = FALSE)
 write.csv(datos_cdi, "datos_cdi.csv", row.names = FALSE)
+write.csv(datos_regresion, "datos_regresion.csv", row.names = FALSE)
