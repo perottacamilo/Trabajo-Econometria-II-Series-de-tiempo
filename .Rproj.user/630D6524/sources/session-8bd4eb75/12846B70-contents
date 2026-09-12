@@ -9,7 +9,7 @@ library(janitor)
 
 rm(list = ls())
 
-precio_productor <- read.csv("raw/Datos") %>% clean_names() 
+precio_productor <- read.csv("raw/precio_produtcor.csv") %>% clean_names() 
 datos_exportacion <- read.csv("Cocoa exports Gh CD.csv") %>% clean_names()
 datos_produccion <- read.csv("Cocoa beans production Gh y CdI.csv") %>% clean_names()
 precio_anual_nominal <- read_excel("precio_anual_por_kg.xlsx", 
