@@ -92,12 +92,12 @@ derivados <- derivados %>%
           precio_internacional_real = precio_kg_real *1000,
           ln_production = log(total_production),
           ln_total_export = log(total_export),
-          ln_precio_prodcutor_usd = log(precio_usd),
+          ln_precio_productor_usd = log(precio_usd),
           ln_tipo_cambio = log(tipo_cambio),
           ln_precio_internacional_nominal = log(precio_internacional_nominal),
           ln_precio_internacional_real = log(precio_internacional_real)) 
 
-   datos_regresion <- datos_cocoa_2 %>%
+   tabla_completa <- datos_cocoa_2 %>%
      mutate(area = case_when(
        area == "Ghana" ~ "gh",
        area == "Côte d'Ivoire" ~ "cdi",
@@ -110,12 +110,17 @@ derivados <- derivados %>%
        names_glue = "{.value}_{area}") %>% 
      mutate(smuggling_incentive = precio_usd_gh/precio_usd_cdi)
                  
+datos_regresion <- tabla_completa |> 
+  select(ln_total_export_gh, ln_precio_productor_usd_gh, 
+         ln_precio_internacional_nominal_gh, smuggling_incentive)
+  
 datos_ghana <- datos_cocoa_2 %>% 
   filter("Ghana" == area)
 
 datos_cdi <- datos_cocoa_2 %>% 
   filter("Côte d'Ivoire" == area)
   
-write.csv(datos_ghana, "datos_ghana.csv", row.names = FALSE)
-write.csv(datos_cdi, "datos_cdi.csv", row.names = FALSE)
-write.csv(datos_regresion, "datos_regresion.csv", row.names = FALSE)
+write.csv(datos_ghana, "input/datos_ghana.csv", row.names = FALSE)
+write.csv(datos_cdi, "input/datos_cdi.csv", row.names = FALSE)
+write.csv(datos_regresion, "input/datos_regresion.csv", row.names = FALSE)
+write.csv(tabla_completa, "input/tabla_completa.csv", row.names = FALSE)
