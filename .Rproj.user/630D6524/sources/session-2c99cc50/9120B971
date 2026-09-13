@@ -1,12 +1,12 @@
 {
-    "id": "9924809C",
+    "id": "9120B971",
     "path": null,
     "project_path": null,
     "type": "r_dataframe",
     "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1789236804435.0,
+    "created": 1789342607119.0,
     "source_on_save": false,
     "relative_order": 2,
     "properties": {
@@ -15,10 +15,10 @@
         "totalObservations": 34,
         "displayedObservations": 34,
         "variables": 42,
-        "cacheKey": "29C270C1",
+        "cacheKey": "A191A48E",
         "object": "tabla_completa",
         "environment": "",
-        "contentUrl": "grid_resource/gridviewer.html?env=&obj=tabla_completa&cache_key=29C270C1&max_display_columns=200&show_summary=1&show_filters=0&use_overlay_scrollbars=1",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=tabla_completa&cache_key=A191A48E&max_display_columns=50",
         "preview": 0,
         "source_window_id": "",
         "Source": "Source"
@@ -28,7 +28,7 @@
     "encoding": "",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1789236804435,
+    "last_content_update": 1789342607119,
     "read_only": false,
     "read_only_alternatives": []
 }
