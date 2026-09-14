@@ -112,7 +112,7 @@ derivados <- derivados %>%
                  
 datos_regresion <- tabla_completa |> 
   select(ln_total_export_gh, ln_precio_productor_usd_gh, 
-         ln_precio_internacional_nominal_gh, smuggling_incentive)
+         ln_precio_internacional_real_gh, smuggling_incentive)
   
 datos_ghana <- datos_cocoa_2 %>% 
   filter("Ghana" == area)
