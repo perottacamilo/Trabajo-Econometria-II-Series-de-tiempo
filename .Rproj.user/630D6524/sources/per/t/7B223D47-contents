@@ -111,8 +111,8 @@ derivados <- derivados %>%
      mutate(smuggling_incentive = precio_usd_gh/precio_usd_cdi)
                  
 datos_regresion <- tabla_completa |> 
-  select(ln_total_export_gh, ln_precio_productor_usd_gh, 
-         ln_precio_internacional_real_gh, smuggling_incentive)
+  select(total_export_gh, , precio_usd_gh, precio_internacional_real_gh, smuggling_incentive) |> 
+  rename(precio_productor_usd_gh = precio_usd_gh)
   
 datos_ghana <- datos_cocoa_2 %>% 
   filter("Ghana" == area)
@@ -122,5 +122,6 @@ datos_cdi <- datos_cocoa_2 %>%
   
 write.csv(datos_ghana, "input/datos_ghana.csv", row.names = FALSE)
 write.csv(datos_cdi, "input/datos_cdi.csv", row.names = FALSE)
-write.csv(datos_regresion, "input/datos_regresion.csv", row.names = FALSE)
+write.csv(datos_regresion, "input/datos.csv", row.names = FALSE)
 write.csv(tabla_completa, "input/tabla_completa.csv", row.names = FALSE)
+

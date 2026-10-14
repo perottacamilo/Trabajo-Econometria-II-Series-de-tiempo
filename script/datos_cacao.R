@@ -122,6 +122,6 @@ datos_cdi <- datos_cocoa_2 %>%
   
 write.csv(datos_ghana, "input/datos_ghana.csv", row.names = FALSE)
 write.csv(datos_cdi, "input/datos_cdi.csv", row.names = FALSE)
-write.csv(datos_regresion, "input/datos_regresion.csv", row.names = FALSE)
+write.csv(datos_regresion, "input/datos.csv", row.names = FALSE)
 write.csv(tabla_completa, "input/tabla_completa.csv", row.names = FALSE)
 
