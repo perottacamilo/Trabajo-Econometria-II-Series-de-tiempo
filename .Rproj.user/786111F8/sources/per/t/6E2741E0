@@ -3,7 +3,7 @@
     "path": "~/GitHub/Trabajo-Econometria-II-Series-de-tiempo/script/datos_cacao.R",
     "project_path": "script/datos_cacao.R",
     "type": "r_source",
-    "hash": "2899974917",
+    "hash": "1048825145",
     "contents": "",
     "dirty": false,
     "created": 1791386021177.0,
@@ -16,11 +16,11 @@
         "scrollLine": "110"
     },
     "folds": "",
-    "lastKnownWriteTime": 1791388248,
+    "lastKnownWriteTime": 1792075887,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1791388248622,
+    "last_content_update": 1792075887,
     "read_only": false,
     "read_only_alternatives": []
 }

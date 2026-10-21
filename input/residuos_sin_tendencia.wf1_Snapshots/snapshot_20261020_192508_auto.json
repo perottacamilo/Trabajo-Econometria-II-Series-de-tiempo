@@ -1,0 +1,82 @@
+
+{
+	"commands" : 
+	[
+		"close Untitled",
+		"{%equation}.ls(optmethod=opg) incentivo_contrabando_sin_tendencia ma(1)",
+		"{%equation}.ls(arma=cls, optmethod=opg) incentivo_contrabando_sin_tendencia ma(1)"
+	],
+	"description" : "Generated based on timer.",
+	"label" : "auto",
+	"workbook_meta" : 
+	{
+		"_name" : "d:\\users\\camilo\\documents\\github\\trabajo-econometria-ii-series-de-tiempo\\input\\residuos_sin_tendencia.wf1",
+		"_pages" : 
+		[
+			
+			{
+				"_frequency" : "A",
+				"_last_update" : [ 739908.8069444444, "10/20/2026 19:22" ],
+				"_name" : "Untitled",
+				"_obj_count" : 9,
+				"_objects" : 
+				[
+					
+					{
+						"_data_type" : "date",
+						"_name" : "@DATE",
+						"_obs_max" : [ 738885.0, "01/01/2024" ],
+						"_obs_min" : [ 722814.0, "01/01/1980" ],
+						"_type" : "INDEX"
+					},
+					
+					{
+						"_name" : "C",
+						"_type" : "COEF"
+					},
+					
+					{
+						"_name" : "EXPORTACION_TOTAL_GH",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "EXPORTACION_TOTAL_GH_SIN_TENDENCIA",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "INCENTIVO_CONTRABANDO",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "INCENTIVO_CONTRABANDO_SIN_TENDENCIA",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "PRECIO_INTERNACIONAL_REAL_GH",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "PRECIO_PRODUCTOR_SIN_TENDENCIA",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "PRECIO_PRODUCTOR_USD_GH",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "RESID",
+						"_type" : "SERIES"
+					}
+				],
+				"_obs_count" : 45
+			}
+		]
+	}
+}
