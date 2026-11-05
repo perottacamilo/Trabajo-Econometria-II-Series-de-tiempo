@@ -1,0 +1,243 @@
+
+{
+	"commands" : 
+	[
+		"{%equation}.ls incentivo_contrabando c @trend tc_2004_4",
+		"{%equation}.ls incentivo_contrabando c @trend tc_2004_4",
+		"{%equation}.ls incentivo_contrabando c @trend tc_2004_4",
+		"{%equation}.ls incentivo_contrabando c @trend tc_2004",
+		"{%equation}.ls incentivo_contrabando c @trend tc_2004_4",
+		"{%equation}.ls(optmethod=opg) incentivo_contrabando c @trend tc_2004_4 ar(1)",
+		"{%equation}.ls(optmethod=opg) incentivo_contrabando c @trend tc_2004_4 ar(1)"
+	],
+	"description" : "Generated based on timer.",
+	"label" : "auto",
+	"workbook_meta" : 
+	{
+		"_name" : "d:\\users\\camilo\\documents\\github\\trabajo-econometria-ii-series-de-tiempo\\input\\datos eviews.wf1",
+		"_pages" : 
+		[
+			
+			{
+				"_frequency" : "A",
+				"_last_update" : [ 739923.8658796296, "11/04/2026 20:46" ],
+				"_name" : "raw",
+				"_obj_count" : 13,
+				"_objects" : 
+				[
+					
+					{
+						"_data_type" : "date",
+						"_name" : "@DATE",
+						"_obs_max" : [ 738885.0, "01/01/2024" ],
+						"_obs_min" : [ 722814.0, "01/01/1980" ],
+						"_type" : "INDEX"
+					},
+					
+					{
+						"_name" : "C",
+						"_type" : "COEF"
+					},
+					
+					{
+						"_name" : "DEFLACTOR_USD",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "EXPORTACION_TOTAL_GH",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "INCENTIVO_CONTRABANDO",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "PRECIO_INTERNACIONAL_REAL_GH",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "PRECIO_PRODUCTOR_REAL",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "PRECIO_PRODUCTOR_USD_GH",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "RESID",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "TC_2004",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "TC_2004_2",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "TC_2004_3",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "TC_2004_4",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "VI_2004",
+						"_type" : "SERIES"
+					}
+				],
+				"_obs_count" : 45
+			},
+			
+			{
+				"_frequency" : "A",
+				"_last_update" : [ 739923.8244675926, "11/04/2026 19:47" ],
+				"_name" : "vi",
+				"_obj_count" : 6,
+				"_objects" : 
+				[
+					
+					{
+						"_data_type" : "date",
+						"_name" : "@DATE",
+						"_obs_max" : [ 738885.0, "01/01/2024" ],
+						"_obs_min" : [ 722814.0, "01/01/1980" ],
+						"_type" : "INDEX"
+					},
+					
+					{
+						"_name" : "C",
+						"_type" : "COEF"
+					},
+					
+					{
+						"_name" : "RESID",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "VI_2004",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "VI_2023",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "VI_2024",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "VI_CRISIS",
+						"_type" : "SERIES"
+					}
+				],
+				"_obs_count" : 45
+			},
+			
+			{
+				"_frequency" : "A",
+				"_last_update" : [ 739923.8250925926, "11/04/2026 19:48" ],
+				"_name" : "1er_mod",
+				"_obj_count" : 8,
+				"_objects" : 
+				[
+					
+					{
+						"_data_type" : "date",
+						"_name" : "@DATE",
+						"_obs_max" : [ 738885.0, "01/01/2024" ],
+						"_obs_min" : [ 722814.0, "01/01/1980" ],
+						"_type" : "INDEX"
+					},
+					
+					{
+						"_name" : "C",
+						"_type" : "COEF"
+					},
+					
+					{
+						"_name" : "EXPORTACION_TOTAL_GH_SIN_TENDENCIA",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "EXPORTACION_VI_SIN_TENDENCIA",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "INCENTIVO_CONTRABANDO_SIN_TENDENCIA",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "INCENTIVO_CONTRABANDO_VI_SIN_TENDENCIA",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "OBSID",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "PRECIO_INTERNACIOAL_VI_2024",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "RESID",
+						"_type" : "SERIES"
+					}
+				],
+				"_obs_count" : 45
+			},
+			
+			{
+				"_frequency" : "A",
+				"_last_update" : [ 739923.8285763889, "11/04/2026 19:53" ],
+				"_name" : "2do_mod",
+				"_obj_count" : 2,
+				"_objects" : 
+				[
+					
+					{
+						"_data_type" : "date",
+						"_name" : "@DATE",
+						"_obs_max" : [ 738885.0, "01/01/2024" ],
+						"_obs_min" : [ 722814.0, "01/01/1980" ],
+						"_type" : "INDEX"
+					},
+					
+					{
+						"_name" : "C",
+						"_type" : "COEF"
+					},
+					
+					{
+						"_name" : "RESID",
+						"_type" : "SERIES"
+					}
+				],
+				"_obs_count" : 45
+			}
+		]
+	}
+}

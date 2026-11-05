@@ -20,7 +20,6 @@ precio_anual_real <- read_excel("raw/precio_anual_por_kg.xlsx", sheet = "Annual 
                                 col_names = c("year", "precio_kg_real")) %>% clean_names()
 tipo_cambio <- read_excel("raw/tipo_cambio.xlsx") %>% clean_names()
 derivados <- read.csv("raw/derivados_cocoa.csv") %>% clean_names()
-
 #Ordenar aquellas tablas que no esten en formato ancho
 #Juntar todas en una sola tabla
 
