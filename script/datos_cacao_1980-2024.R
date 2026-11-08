@@ -97,3 +97,80 @@ write.csv(datos_cdi, "input/datos_cdi.csv", row.names = FALSE)
 write.csv(datos_regresion, "input/datos.csv", row.names = FALSE)
 write.csv(tabla_completa, "input/tabla_completa.csv", row.names = FALSE)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+library(tidyverse)
+library(ggtext)    # install.packages("ggtext") si no lo tenés
+library(scales)
+
+col_gh  <- "#B13507"   # rojo (Ghana)
+col_cdi <- "#4C6A9C"   # azul (Costa de Marfil)
+
+# 1) Datos en formato largo
+precios <- tabla_completa %>%
+  select(year, Ghana = precio_usd_gh, `Costa de Marfil` = precio_usd_cdi) %>%
+  pivot_longer(-year, names_to = "pais", values_to = "precio_usd") %>%
+  filter(year >= 1980, year <= 2024)
+
+# 2) Último año de cada serie (para el punto y la etiqueta directa)
+ult <- precios %>% filter(year == max(year))
+
+# 3) Gráfico
+g <- ggplot(precios, aes(x = year, y = precio_usd, color = pais)) +
+  geom_line(linewidth = 1.1) +
+  geom_point(data = ult, size = 3) +
+  geom_text(data = ult, aes(label = pais), hjust = -0.15,
+            fontface = "bold", size = 4, show.legend = FALSE) +
+  geom_vline(xintercept = 2004, linetype = "dotted", color = "grey60") +
+  annotate("text", x = 2004.4, y = 150, hjust = 0, size = 3.6, color = "grey35",
+           label = "2004: Guerra civil en Costa de Marfil") +
+  # Línea de referencia opcional (inicio del ERP en Ghana)
+  geom_vline(xintercept = 1983, linetype = "dotted", color = "grey60") +
+  annotate("text", x = 1983.5, y = Inf, vjust = 1.5, hjust = 0, size = 3.6,
+           color = "grey35", label = "1983: Inicio del ERP en Ghana") +
+  scale_color_manual(values = c("Ghana" = col_gh, "Costa de Marfil" = col_cdi)) +
+  scale_x_continuous(breaks = c(seq(1980, 2020, by = 10), 2024),
+                     limits = c(1980, 2024),
+                     expand = expansion(mult = c(0.01, 0.16))) +
+  scale_y_continuous(labels = label_number(big.mark = ".", decimal.mark = ","),
+                     limits = c(0, NA), expand = expansion(mult = c(0, 0.05))) +
+  coord_cartesian(clip = "off") +
+  labs(
+    title    = paste0("Precio pagado al productor de cacao: <span style='color:", col_gh,
+                      "'>Ghana</span> frente a <span style='color:", col_cdi,
+                      "'>Costa de Marfil</span>"),
+    subtitle = "Precio al productor en dólares, 1980-2024.",
+    caption  = "Fuente: elaboración propia con datos de FAOSTAT y fuentes oficiales.",
+    x = NULL, y = NULL
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    legend.position       = "none",
+    plot.title.position   = "plot",
+    plot.title            = element_markdown(family = "serif", face = "bold",
+                                             size = 19, lineheight = 1.1),
+    plot.subtitle         = element_text(color = "grey35", margin = margin(b = 10)),
+    plot.caption          = element_text(color = "grey45", hjust = 0, size = 9),
+    panel.grid.minor      = element_blank(),
+    panel.grid.major.x    = element_blank(),
+    panel.grid.major.y    = element_line(color = "grey80", linetype = "dashed"),
+    axis.text             = element_text(color = "grey40"),
+    axis.ticks.x          = element_line(color = "grey60"),
+    plot.margin           = margin(12, 20, 10, 12)
+  )
+
+g
+
+ggsave("output/precios_productores_gh_cdi.png", g,
+       width = 9, height = 5.5, dpi = 300, bg = "white")
