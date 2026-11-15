@@ -147,11 +147,11 @@ g <- ggplot(precios, aes(x = year, y = precio_usd, color = pais)) +
                      limits = c(0, NA), expand = expansion(mult = c(0, 0.05))) +
   coord_cartesian(clip = "off") +
   labs(
-    title    = paste0("Precio pagado al productor de cacao: <span style='color:", col_gh,
+    title    = paste0("Gráfico 1 <br>Precio pagado al productor de cacao: <span style='color:", col_gh,
                       "'>Ghana</span> frente a <span style='color:", col_cdi,
                       "'>Costa de Marfil</span>"),
     subtitle = "Precio al productor en dólares, 1980-2024.",
-    caption  = "Fuente: elaboración propia con datos de FAOSTAT y fuentes oficiales.",
+    caption  = "Fuente: elaboración propia con datos de FAOSTAT.",
     x = NULL, y = NULL
   ) +
   theme_minimal(base_size = 13) +
