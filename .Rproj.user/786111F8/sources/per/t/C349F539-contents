@@ -172,5 +172,5 @@ g <- ggplot(precios, aes(x = year, y = precio_usd, color = pais)) +
 
 g
 
-ggsave("output/precios_productores_gh_cdi.png", g,
+ggsave("output/grafico/precios_productores_gh_cdi.png", g,
        width = 9, height = 5.5, dpi = 300, bg = "white")
