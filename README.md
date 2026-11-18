@@ -27,8 +27,9 @@ El detalle está en el paper: [`paper/El_contrabando_de_cacao_en_Ghana_1980-2024
 
 ```
 .
-├── <proyecto>.Rproj            # abrir el proyecto desde acá
-├── raw/                        # datos crudos (ver "Datos")
+├── contrabando-cacao-ghana.Rproj      # abrir el proyecto desde acá
+│   
+├── raw/                               # datos crudos (ver "Datos")
 │   ├── datos_exportacion.csv
 │   ├── datos_produccion.csv
 │   ├── deflactor_pbi_usd.csv
@@ -40,6 +41,7 @@ El detalle está en el paper: [`paper/El_contrabando_de_cacao_en_Ghana_1980-2024
 │   └── precio_productor_tipo_cambio.xlsx
 │   └── produccion_2.xlsx
 │   └── tipo_cambio.xlsx
+│   │
 ├── input/                      # bases que genera el script (entrada para EViews)
 │   ├── datos.csv               #   las 4 series del análisis
 │   ├── tabla_completa.csv      #   todas las variables de ambos países
@@ -47,14 +49,19 @@ El detalle está en el paper: [`paper/El_contrabando_de_cacao_en_Ghana_1980-2024
 │   └── datos_cdi.csv
 ├── output/
 │   └── grafico/precios_productores_gh_cdi.png
+│   │
 ├── auxiliar/                   # algunos textos de referencia
+│   │
 │   └── "The Price Incentive to Smuggle and the Cocoa Supply in Ghana, 1950-96 - Aleš Bulíř"
 │   └── "FAOSTAT y “Distortions to Agricultural Incentives in Ghana”, Jonathan Brooks, Andre Croppenstedt y Emmanuel Aggrey-Fynn"
 │   └── "FAO - Trade reforms and food security – country case studies and synthesis."
+│   │
 ├── eviews/
 │   └── Datos Cacao
+│   │
 └── paper/
 │   └── "El contrabando de cacao en Ghana 1980-2024"
+│   │
 └── presentacion/
 │   └── "Contrabando de cacao en Ghana 1980-2024"
 ```
