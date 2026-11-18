@@ -3,7 +3,7 @@
     "path": "~/GitHub/Trabajo-Econometria-II-Series-de-tiempo/script/datos_cacao_1980-2024.R",
     "project_path": "script/datos_cacao_1980-2024.R",
     "type": "r_source",
-    "hash": "2855313407",
+    "hash": "3349198495",
     "contents": "",
     "dirty": false,
     "created": 1794068083222.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "174,23",
-        "scrollLine": "154"
+        "cursorPosition": "176,0",
+        "scrollLine": "155"
     },
     "folds": "",
-    "lastKnownWriteTime": 1794786494,
+    "lastKnownWriteTime": 1794961285,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1794786494135,
+    "last_content_update": 1794961285228,
     "read_only": false,
     "read_only_alternatives": []
 }
