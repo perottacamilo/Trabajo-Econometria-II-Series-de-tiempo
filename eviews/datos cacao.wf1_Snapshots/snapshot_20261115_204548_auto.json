@@ -1,0 +1,531 @@
+
+{
+	"commands" : "",
+	"description" : "Generated when this file was opened on 2026/11/18 12:44:38.",
+	"label" : "auto base",
+	"workbook_meta" : 
+	{
+		"_name" : "d:\\users\\camilo\\documents\\github\\trabajo-econometria-ii-series-de-tiempo\\eviews\\datos cacao.wf1",
+		"_pages" : 
+		[
+			
+			{
+				"_frequency" : "A",
+				"_last_update" : [ 739934.8650925925, "11/15/2026 20:45" ],
+				"_name" : "All",
+				"_obj_count" : 23,
+				"_objects" : 
+				[
+					
+					{
+						"_data_type" : "date",
+						"_name" : "@DATE",
+						"_obs_max" : [ 738885.0, "01/01/2024" ],
+						"_obs_min" : [ 722814.0, "01/01/1980" ],
+						"_type" : "INDEX"
+					},
+					
+					{
+						"_name" : "C",
+						"_type" : "COEF"
+					},
+					
+					{
+						"_name" : "DEFLACTOR_USD",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "EXPORTACION_TOTAL_GH",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "IC_TC_SLS",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "INCENTIVO_CONTRABANDO",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "LN_EXPO",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "PRECIO_INTERNACIONAL_REAL_GH",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "PRECIO_PRODUCTOR_REAL",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "PRECIO_PRODUCTOR_REAL_SIN_TENDENCIA",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "PRECIO_PRODUCTOR_USD_GH",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "PRECIO_PRODUCTOR_VI",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "RES_IC",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "RES_LN",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "RESID",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "SLS_IC",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "TC_2004",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "TC_2004_2",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "TC_2004_3",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "TC_2004_4",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "VI_1983",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "VI_2004",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "VI_2024",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "VI_CRISIS",
+						"_type" : "SERIES"
+					}
+				],
+				"_obs_count" : 45
+			},
+			
+			{
+				"_frequency" : "A",
+				"_last_update" : [ 739934.8650925925, "11/15/2026 20:45" ],
+				"_name" : "Raw",
+				"_obj_count" : 7,
+				"_objects" : 
+				[
+					
+					{
+						"_data_type" : "date",
+						"_name" : "@DATE",
+						"_obs_max" : [ 738885.0, "01/01/2024" ],
+						"_obs_min" : [ 722814.0, "01/01/1980" ],
+						"_type" : "INDEX"
+					},
+					
+					{
+						"_name" : "C",
+						"_type" : "COEF"
+					},
+					
+					{
+						"_name" : "EXPORTACION_TOTAL_GH",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "INCENTIVO_CONTRABANDO",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "LN_EXPO",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "PRECIO_INTERNACIONAL_REAL_GH",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "PRECIO_PRODUCTOR_REAL",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "RESID",
+						"_type" : "SERIES"
+					}
+				],
+				"_obs_count" : 45
+			},
+			
+			{
+				"_frequency" : "A",
+				"_last_update" : [ 739934.8650925925, "11/15/2026 20:45" ],
+				"_name" : "VI",
+				"_obj_count" : 8,
+				"_objects" : 
+				[
+					
+					{
+						"_data_type" : "date",
+						"_name" : "@DATE",
+						"_obs_max" : [ 738885.0, "01/01/2024" ],
+						"_obs_min" : [ 722814.0, "01/01/1980" ],
+						"_type" : "INDEX"
+					},
+					
+					{
+						"_name" : "C",
+						"_type" : "COEF"
+					},
+					
+					{
+						"_name" : "RESID",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "SLS_IC",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "TC_2004",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "VI_1983",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "VI_2023",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "VI_2024",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "VI_CRISIS",
+						"_type" : "SERIES"
+					}
+				],
+				"_obs_count" : 45
+			},
+			
+			{
+				"_frequency" : "A",
+				"_last_update" : [ 739934.8650925925, "11/15/2026 20:45" ],
+				"_name" : "Detrend_VI",
+				"_obj_count" : 11,
+				"_objects" : 
+				[
+					
+					{
+						"_data_type" : "date",
+						"_name" : "@DATE",
+						"_obs_max" : [ 738885.0, "01/01/2024" ],
+						"_obs_min" : [ 722814.0, "01/01/1980" ],
+						"_type" : "INDEX"
+					},
+					
+					{
+						"_name" : "C",
+						"_type" : "COEF"
+					},
+					
+					{
+						"_name" : "EXPORTACION_TOTAL_GH_SIN_TENDENCIA",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "EXPORTACION_VI_SIN_TENDENCIA",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "IC_TC_SLS",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "INCENTIVO_CONTRABANDO_SIN_TENDENCIA",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "INCENTIVO_CONTRABANDO_VI_SIN_TENDENCIA",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "OBSID",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "PRECIO_INTERNACIOAL_VI_2024",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "PRECIO_PRODUCTOR_REAL_SIN_TENDENCIA",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "PRECIO_PRODUCTOR_VI",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "RESID",
+						"_type" : "SERIES"
+					}
+				],
+				"_obs_count" : 45
+			},
+			
+			{
+				"_frequency" : "A",
+				"_last_update" : [ 739934.8650925925, "11/15/2026 20:45" ],
+				"_name" : "Res_WN",
+				"_obj_count" : 6,
+				"_objects" : 
+				[
+					
+					{
+						"_data_type" : "date",
+						"_name" : "@DATE",
+						"_obs_max" : [ 738885.0, "01/01/2024" ],
+						"_obs_min" : [ 722814.0, "01/01/1980" ],
+						"_type" : "INDEX"
+					},
+					
+					{
+						"_name" : "C",
+						"_type" : "COEF"
+					},
+					
+					{
+						"_name" : "RES_EXPORTACIONES",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "RES_IC",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "RES_PRECIO_INTER",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "RES_PRECIO_PROD",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "RESID",
+						"_type" : "SERIES"
+					}
+				],
+				"_obs_count" : 45
+			},
+			
+			{
+				"_frequency" : "A",
+				"_last_update" : [ 739934.8650925925, "11/15/2026 20:45" ],
+				"_name" : "Filtrado",
+				"_obj_count" : 9,
+				"_objects" : 
+				[
+					
+					{
+						"_data_type" : "date",
+						"_name" : "@DATE",
+						"_obs_max" : [ 738885.0, "01/01/2024" ],
+						"_obs_min" : [ 722814.0, "01/01/1980" ],
+						"_type" : "INDEX"
+					},
+					
+					{
+						"_name" : "C",
+						"_type" : "COEF"
+					},
+					
+					{
+						"_name" : "RES_EXPORTACIONES",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "RES_IC",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "RES_PRECIO_INTER",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "RES_PRECIO_PROD",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "RESID",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "Y_FILTRADA_IC",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "Y_FILTRADA_PI",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "Y_FILTRADA_PP",
+						"_type" : "SERIES"
+					}
+				],
+				"_obs_count" : 45
+			},
+			
+			{
+				"_frequency" : "A",
+				"_last_update" : [ 739934.8650925925, "11/15/2026 20:45" ],
+				"_name" : "Grange_PSS",
+				"_obj_count" : 13,
+				"_objects" : 
+				[
+					
+					{
+						"_data_type" : "date",
+						"_name" : "@DATE",
+						"_obs_max" : [ 738885.0, "01/01/2024" ],
+						"_obs_min" : [ 722814.0, "01/01/1980" ],
+						"_type" : "INDEX"
+					},
+					
+					{
+						"_name" : "C",
+						"_type" : "COEF"
+					},
+					
+					{
+						"_name" : "EXPORTACION_TOTAL_GH",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "INCENTIVO_CONTRABANDO",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "LN_EXPO",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "PRECIO_INTERNACIONAL_REAL_GH",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "PRECIO_PRODUCTOR_REAL",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "RESID",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "SLS_IC",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "TC_2004",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "VI_1983",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "VI_2023",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "VI_2024",
+						"_type" : "SERIES"
+					},
+					
+					{
+						"_name" : "VI_CRISIS",
+						"_type" : "SERIES"
+					}
+				],
+				"_obs_count" : 45
+			}
+		]
+	}
+}
