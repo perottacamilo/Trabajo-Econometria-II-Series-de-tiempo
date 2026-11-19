@@ -42,8 +42,8 @@ El detalle está en el paper: [`paper/El_contrabando_de_cacao_en_Ghana_1980-2024
 │   └── produccion_2.xlsx
 │   └── tipo_cambio.xlsx
 │   │
-├── input/                      # bases que genera el script (entrada para EViews)
-│   ├── datos.csv               #   las 4 series del análisis
+├── input/                      #   bases que genera el script (entrada para EViews)
+│   ├── datos.csv               #   datos de las 4 variables utilizados en EViews
 │   ├── tabla_completa.csv      #   todas las variables de ambos países
 │   ├── datos_ghana.csv
 │   └── datos_cdi.csv
@@ -57,13 +57,13 @@ El detalle está en el paper: [`paper/El_contrabando_de_cacao_en_Ghana_1980-2024
 │   └── "FAO - Trade reforms and food security – country case studies and synthesis."
 │   │
 ├── eviews/
-│   └── Datos Cacao
+│   └── Datos Cacao             # todas las series, variables de intervencion y residuos utilizados en el trabajo
 │   │
 └── paper/
-│   └── "El contrabando de cacao en Ghana 1980-2024"
+│   └── "Contrabando y exportaciones de cacao en Ghana 1980-2024"
 │   │
 └── presentacion/
-│   └── "Contrabando de cacao en Ghana 1980-2024"
+│   └── "Presentacion - Contrabando y exportaciones de cacao en Ghana 1980-2024"
 ```
 
 ## Datos
