@@ -21,8 +21,7 @@ En 1983 Ghana inició el Programa de Recuperación Económica (ERP), que subió 
 - **Largo plazo (test de límites de Pesaran, Shin y Smith):** el estadístico F supera el límite superior al 1% en los cuatro modelos estimados, pero el coeficiente de largo plazo del incentivo **no es significativo** cuando se controla por la guerra civil de Costa de Marfil (TC 2004) y solo lo es cuando se la excluye.
 - **Conclusión:** para 1980-2024 no hay evidencia estadística robusta de que el incentivo explique las exportaciones de Ghana. Con solo 45 observaciones y resultados sensibles a las variables de intervención, esto no implica que el diferencial de precios haya perdido importancia económica.
 
-El detalle está en el paper: [`paper/El_contrabando_de_cacao_en_Ghana_1980-2024.pdf`] 
-
+El detalle está en el paper: [Contrabando y exportaciones de cacao en Ghana 1980-2024.pdf](paper/Contrabando%20y%20exportaciones%20de%20cacao%20en%20Ghana%201980-2024.pdf)
 ## Estructura del repositorio
 
 ```
