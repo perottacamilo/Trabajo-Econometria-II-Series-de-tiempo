@@ -63,7 +63,7 @@ El detalle está en el paper: [Contrabando y exportaciones de cacao en Ghana 198
 │   │
 └── paper/
 │   └── "Contrabando y exportaciones de cacao en Ghana 1980-2024"
-│   │
+│   │ 
 └── presentacion/
 │   └── "Presentacion - Contrabando y exportaciones de cacao en Ghana 1980-2024"
 ```
