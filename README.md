@@ -50,6 +50,9 @@ El detalle está en el paper: [`paper/El_contrabando_de_cacao_en_Ghana_1980-2024
 ├── output/
 │   └── grafico/precios_productores_gh_cdi.png
 │   │
+│   └── modelos y test
+│   │
+│   │
 ├── auxiliar/                   # algunos textos de referencia
 │   │
 │   └── "The Price Incentive to Smuggle and the Cocoa Supply in Ghana, 1950-96 - Aleš Bulíř"
@@ -128,7 +131,7 @@ Nivel de significatividad: 5% en todos los tests.
 
 ### 2. Estimaciones (EViews)
 
-Los tests y modelos (ADF, ARMA con variables de intervención, correlogramas cruzados, VAR, Granger y bounds test) se estimaron en **EViews 12** a partir de `input/datos.csv`. **[COMPLETAR]** Indicar dónde están el workfile y los programas, o cómo reproducir las estimaciones paso a paso.
+Los tests y modelos (ADF, ARMA con variables de intervención, correlogramas cruzados, VAR, Granger y bounds test) se estimaron en **EViews 12** a partir de `input/datos.csv`. El archivo **Modelos series** y **Salidas test** contienen los pasos y salidas de EViews que se fueron realizando a lo largo del trabajo, y aparecen en el apartado `output/`, donde tambien se encuentran las tablas directas de EViews para cada serie.
 
 ## Software
 
